@@ -33,6 +33,7 @@
     </license>
   </licenses>
 
+
   <repositories>
     <repository>
       <id>ZK CE</id>
@@ -44,9 +45,54 @@
           <name>ZK Evaluation Repository</name>
       <url>http://mavensync.zkoss.org/eval</url>
     </repository>
+    <repository>
+      <id>maven_mercel</id>
+      <name>maven mercel repository</name>
+      <url>sftp://107.170.189.156:2525/usr/share/maven-repo</url>
+    </repository>
   </repositories>
 
+  <pluginRepositories>
+    <pluginRepository>
+      <id>zkmaven</id>
+      <name>ZK Maven Plugin Repository</name>
+      <url>http://mavensync.zkoss.org/maven2/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
   <dependencies>
+
+    <dependency>
+      <groupId>org.zkoss.zk</groupId>
+      <artifactId>zkbind</artifactId>
+      <version>${zk.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.zkoss.zk</groupId>
+      <artifactId>zul</artifactId>
+      <version>${zk.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.zkoss.zk</groupId>
+      <artifactId>zkplus</artifactId>
+      <version>${zk.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.zkoss.zk</groupId>
+      <artifactId>zhtml</artifactId>
+      <version>${zk.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>${commons-io}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.inssjp</groupId>
+      <artifactId>commons</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
